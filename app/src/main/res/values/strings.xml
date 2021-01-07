@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Base</string>
+
+
+    <!-- 主页 三个TAB -->
+    <string name="tab_assets">资产</string>
+    <string name="tab_pool">矿场</string>
+    <string name="tab_mine">我的</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="auto">自動</string>
+    <string name="chinese">中文簡體</string>
+    <string name="chinese_tw">中文繁體</string>
+    <string name="english">英語</string>
+    <string name="japan">日語</string>
+    <string name="french">法語</string>
+
+    <!-- 列表通用底部 -->
+    <string name="footer_loading">加載更多中</string>
+    <string name="footer_complete">已經全部加載完畢</string>
+    <string name="footer_click">點擊加載更多</string>
+    <string name="footer_error">加載錯誤，點擊重試</string>
+</resources>

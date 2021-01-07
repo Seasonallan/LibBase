@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="auto">自動</string>
+    <string name="chinese">中国語の簡体字</string>
+    <string name="chinese_tw">中国語の繁体字</string>
+    <string name="english">英語</string>
+    <string name="japan">日本語</string>
+    <string name="french">フランス語</string>
+
+    <!-- リスト通用底部 -->
+    <string name="footer_loading">ローディング中</string>
+    <string name="footer_complete">アップロードしました</string>
+    <string name="footer_click">クリックして更にローディングします</string>
+    <string name="footer_error">エラー発生です、再度お試しください</string>
+</resources>

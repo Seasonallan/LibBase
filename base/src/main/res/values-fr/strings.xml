@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="auto">Automatique</string>
+    <string name="chinese">Chinois simplifié</string>
+    <string name="chinese_tw">Chinois</string>
+    <string name="english">Anglais</string>
+    <string name="japan">Japonais</string>
+    <string name="french">Français</string>
+
+    <!-- 列表通用底部 -->
+    <string name="footer_loading">Charger plus</string>
+    <string name="footer_complete">Tout est chargé</string>
+    <string name="footer_click">Taper pour charger plus</string>
+    <string name="footer_error">Changement erreur</string>
+</resources>
