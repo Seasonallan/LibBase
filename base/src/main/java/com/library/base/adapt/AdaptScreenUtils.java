@@ -2,7 +2,6 @@ package com.library.base.adapt;
 
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
-import android.util.Log;
 
 import com.library.base.GlobalContext;
 
@@ -139,7 +138,6 @@ public final class AdaptScreenUtils {
                 DisplayMetrics dm = (DisplayMetrics) metricsField.get(resources);
                 if (dm != null) dm.xdpi = newXdpi;
             } catch (Exception e) {
-                Log.e("AdaptScreenUtils", "applyMetricsFields: " + e);
             }
         }
     }
@@ -148,7 +146,6 @@ public final class AdaptScreenUtils {
         try {
             return (DisplayMetrics) field.get(resources);
         } catch (Exception e) {
-            Log.e("AdaptScreenUtils", "getMetricsFromField: " + e);
             return null;
         }
     }
