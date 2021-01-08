@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<redline>
+<summary src="D:\Base">
+<serial_no>1610078023664</serial_no>
+<submitter>tester</submitter>
+<reportname>testReport</reportname>
+<product/>
+<project_name>pool</project_name>
+<version>1.4.8</version>
+<filenum>91</filenum>
+<linenum>15852</linenum>
+<starttime>2021-01-08 11:53:43</starttime>
+<endtime>2021-01-08 11:55:41</endtime>
+<totaltime>1分 57秒 605毫秒 </totaltime>
+<blocknum>0</blocknum>
+<errornum>13</errornum>
+<warningnum>28</warningnum>
+<suggestnum>0</suggestnum>
+<errorfilenum>0</errorfilenum>
+</summary>
+<violations>
+<violation description="建议使用if(DEBUG)包裹Log方法,日志开关不要封装在日志函数中。" id="3-3" priority="2" rulename="LogOnOffRule" ruletype="日志类">
+<error beginline="53" class="com.library.base.LogConsole" endline="53" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="d" position="方法名:d&#10;行:53&#10;"/>
+<error beginline="60" class="com.library.base.LogConsole" endline="60" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="d" position="方法名:d&#10;行:60&#10;"/>
+<error beginline="71" class="com.library.base.LogConsole" endline="71" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="e" position="方法名:e&#10;行:71&#10;"/>
+<error beginline="78" class="com.library.base.LogConsole" endline="78" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="e" position="方法名:e&#10;行:78&#10;"/>
+<error beginline="84" class="com.library.base.LogConsole" endline="84" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="e" position="方法名:e&#10;行:84&#10;"/>
+<error beginline="90" class="com.library.base.LogConsole" endline="90" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="e" position="方法名:e&#10;行:90&#10;"/>
+<error beginline="97" class="com.library.base.LogConsole" endline="97" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="i" position="方法名:i&#10;行:97&#10;"/>
+<error beginline="104" class="com.library.base.LogConsole" endline="104" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="i" position="方法名:i&#10;行:104&#10;"/>
+<error beginline="111" class="com.library.base.LogConsole" endline="111" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="v" position="方法名:v&#10;行:111&#10;"/>
+<error beginline="118" class="com.library.base.LogConsole" endline="118" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="v" position="方法名:v&#10;行:118&#10;"/>
+<error beginline="125" class="com.library.base.LogConsole" endline="125" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="w" position="方法名:w&#10;行:125&#10;"/>
+<error beginline="132" class="com.library.base.LogConsole" endline="132" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="w" position="方法名:w&#10;行:132&#10;"/>
+<error beginline="139" class="com.library.base.LogConsole" endline="139" file="LogConsole.java" filepath="D:\Base\base\src\main\java\com\library\base\LogConsole.java" method="w" position="方法名:w&#10;行:139&#10;"/>
+<error beginline="142" class="com.library.base.adapt.AdaptScreenUtils" endline="142" file="AdaptScreenUtils.java" filepath="D:\Base\base\src\main\java\com\library\base\adapt\AdaptScreenUtils.java" method="applyMetricsFields" position="方法名:applyMetricsFields&#10;行:142&#10;"/>
+<error beginline="151" class="com.library.base.adapt.AdaptScreenUtils" endline="151" file="AdaptScreenUtils.java" filepath="D:\Base\base\src\main\java\com\library\base\adapt\AdaptScreenUtils.java" method="getMetricsFromField" position="方法名:getMetricsFromField&#10;行:151&#10;"/>
+<error beginline="107" class="com.library.base.gif.frame.GifDecoder" endline="107" file="GifDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\frame\GifDecoder.java" method="openFile" position="方法名:openFile&#10;行:107&#10;"/>
+<error beginline="115" class="com.library.base.gif.frame.GifDecoder" endline="115" file="GifDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\frame\GifDecoder.java" method="run" position="方法名:run&#10;行:115&#10;"/>
+<error beginline="295" class="com.library.base.gif.frame.GifDecoder" endline="295" file="GifDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\frame\GifDecoder.java" method="setPixels" position="方法名:setPixels&#10;行:295&#10;"/>
+<error beginline="81" class="com.library.base.gif.movie.FrameDecoder" endline="81" file="FrameDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\movie\FrameDecoder.java" method="FrameDecoder" position="方法名:FrameDecoder&#10;行:81&#10;"/>
+<error beginline="89" class="com.library.base.gif.movie.FrameDecoder" endline="89" file="FrameDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\movie\FrameDecoder.java" method="FrameDecoder" position="方法名:FrameDecoder&#10;行:89&#10;"/>
+<error beginline="231" class="com.library.base.gif.movie.FrameDecoder" endline="231" file="FrameDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\movie\FrameDecoder.java" method="setPixels" position="方法名:setPixels&#10;行:231&#10;"/>
+<error beginline="59" class="com.library.base.permission.FastPermissions$PermissionFragment" endline="59" file="FastPermissions.java" filepath="D:\Base\base\src\main\java\com\library\base\permission\FastPermissions.java" method="onAttach" position="方法名:onAttach&#10;行:59&#10;"/>
+</violation>
+<violation description="建议将AndroidManifest.xml文件android:allowBackup属性设置为false。当allowBackup未设置值（默认值为true）或者标志值为true时，攻击者可通过adb backup和adb restore来备份和恢复应用程序数据。" id="4-12" priority="1" rulename="AllowBackupRule" ruletype="安全类">
+<error beginline="11" class="D:\Base\app\build\intermediates\bundle_manifest\debug\bundle-manifest\AndroidManifest.xml.AndroidManifest.xml" endline="20" file="AndroidManifest.xml" filepath="D:\Base\app\build\intermediates\bundle_manifest\debug\bundle-manifest\AndroidManifest.xml" method="application" position="方法名:application&#10;开始行:11&#10;结束行:20"/>
+<error beginline="12" class="D:\Base\app\build\intermediates\instant_app_manifest\debug\AndroidManifest.xml.AndroidManifest.xml" endline="21" file="AndroidManifest.xml" filepath="D:\Base\app\build\intermediates\instant_app_manifest\debug\AndroidManifest.xml" method="application" position="方法名:application&#10;开始行:12&#10;结束行:21"/>
+<error beginline="11" class="D:\Base\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml.AndroidManifest.xml" endline="20" file="AndroidManifest.xml" filepath="D:\Base\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml" method="application" position="方法名:application&#10;开始行:11&#10;结束行:20"/>
+<error beginline="5" class="D:\Base\app\src\main\AndroidManifest.xml.AndroidManifest.xml" endline="11" file="AndroidManifest.xml" filepath="D:\Base\app\src\main\AndroidManifest.xml" method="application" position="方法名:application&#10;开始行:5&#10;结束行:11"/>
+</violation>
+<violation description="建议将AndroidManifest.xml文件android:debuggable属性设置为false。当debuggable标志值为true时，该程序可被任意调试，导致APP被恶意攻击者控制。" id="4-13" priority="1" rulename="DebuggableRule" ruletype="安全类">
+<error beginline="11" class="D:\Base\app\build\intermediates\bundle_manifest\debug\bundle-manifest\AndroidManifest.xml.AndroidManifest.xml" endline="20" file="AndroidManifest.xml" filepath="D:\Base\app\build\intermediates\bundle_manifest\debug\bundle-manifest\AndroidManifest.xml" method="application" position="方法名:application&#10;开始行:11&#10;结束行:20"/>
+<error beginline="12" class="D:\Base\app\build\intermediates\instant_app_manifest\debug\AndroidManifest.xml.AndroidManifest.xml" endline="21" file="AndroidManifest.xml" filepath="D:\Base\app\build\intermediates\instant_app_manifest\debug\AndroidManifest.xml" method="application" position="方法名:application&#10;开始行:12&#10;结束行:21"/>
+<error beginline="11" class="D:\Base\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml.AndroidManifest.xml" endline="20" file="AndroidManifest.xml" filepath="D:\Base\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml" method="application" position="方法名:application&#10;开始行:11&#10;结束行:20"/>
+</violation>
+<violation description="资源对象没有关闭。请确保输入输出流创建的对象在使用完成后进行了妥善的关闭处理。" id="2-8" priority="1" rulename="FIRELINE_OS_OPEN_STREAM" ruletype="内存类">
+<error beginline="22" class="com.library.base.gif.MoviePlugin" endline="22" file="MoviePlugin.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\MoviePlugin.java" method="init" position="方法名:init&#10;行:22&#10;"/>
+<error beginline="266" class="com.library.base.gif.base.GifEncoder" endline="266" file="GifEncoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\base\GifEncoder.java" method="start" position="方法名:start&#10;行:266&#10;"/>
+<error beginline="105" class="com.library.base.gif.frame.GifDecoder" endline="105" file="GifDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\frame\GifDecoder.java" method="openFile" position="方法名:openFile&#10;行:105&#10;"/>
+<error beginline="128" class="com.library.base.gif.frame.GifDecoderOneByOne" endline="128" file="GifDecoderOneByOne.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\frame\GifDecoderOneByOne.java" method="startReadBytes" position="方法名:startReadBytes&#10;行:128&#10;"/>
+<error beginline="56" class="com.library.base.gif.frame.GifDecoderUtils" endline="56" file="GifDecoderUtils.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\frame\GifDecoderUtils.java" method="decoderByMoive" position="方法名:decoderByMoive&#10;行:56&#10;"/>
+<error beginline="79" class="com.library.base.gif.movie.FrameDecoder" endline="79" file="FrameDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\movie\FrameDecoder.java" method="&lt;init&gt;" position="方法名:&lt;init&gt;&#10;行:79&#10;"/>
+</violation>
+<violation description="字符串拼接时尽量使用StringBuilder（非线程安全，速度最快）或StringBuffer（线程安全，速度快）的append方法来代替+" id="6-11" priority="2" rulename="SBSC_USE_STRINGBUFFER_CONCATENATION" ruletype="多线程">
+<error beginline="516" class="com.library.base.gif.frame.GifDecoder" endline="516" file="GifDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\frame\GifDecoder.java" method="readContents" position="方法名:readContents&#10;行:516&#10;"/>
+<error beginline="558" class="com.library.base.gif.frame.GifDecoder" endline="558" file="GifDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\frame\GifDecoder.java" method="readHeader" position="方法名:readHeader&#10;行:558&#10;"/>
+<error beginline="449" class="com.library.base.gif.frame.GifDecoderOneByOne" endline="449" file="GifDecoderOneByOne.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\frame\GifDecoderOneByOne.java" method="readHeader" position="方法名:readHeader&#10;行:449&#10;"/>
+<error beginline="112" class="com.library.base.gif.frame.GifDecoderOneByOne" endline="112" file="GifDecoderOneByOne.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\frame\GifDecoderOneByOne.java" method="startReadBytes" position="方法名:startReadBytes&#10;行:112&#10;"/>
+<error beginline="426" class="com.library.base.gif.movie.FrameDecoder" endline="426" file="FrameDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\movie\FrameDecoder.java" method="readContents" position="方法名:readContents&#10;行:426&#10;"/>
+<error beginline="468" class="com.library.base.gif.movie.FrameDecoder" endline="468" file="FrameDecoder.java" filepath="D:\Base\base\src\main\java\com\library\base\gif\movie\FrameDecoder.java" method="readHeader" position="方法名:readHeader&#10;行:468&#10;"/>
+</violation>
+</violations>
+</redline>

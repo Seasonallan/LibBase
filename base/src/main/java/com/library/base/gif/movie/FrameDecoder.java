@@ -3,7 +3,6 @@ package com.library.base.gif.movie;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
-import android.util.Log;
 
 import com.library.base.gif.frame.GifDecoder;
 
@@ -78,7 +77,6 @@ public class FrameDecoder {
         try {
             in = new FileInputStream(strFileName);
         } catch (Exception ex) {
-            Log.e("open failed", ex.toString());
         }
     }
 
@@ -86,7 +84,6 @@ public class FrameDecoder {
         try {
             in = context.getResources().openRawResource(id);
         } catch (Exception ex) {
-            Log.e("open failed", ex.toString());
         }
     }
 
@@ -228,7 +225,6 @@ public class FrameDecoder {
             } catch (OutOfMemoryError | StackOverflowError e) {
                 e.printStackTrace();
             } catch (Exception ex) {
-                Log.e("GifView decode setpixel", ex.toString());
             }
         }
 

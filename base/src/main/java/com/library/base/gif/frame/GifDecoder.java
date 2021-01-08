@@ -3,7 +3,6 @@ package com.library.base.gif.frame;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
-import android.util.Log;
 
 import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
@@ -104,7 +103,6 @@ public class GifDecoder extends Thread {
 		try {
 			in = new FileInputStream(strFileName);
 		} catch (Exception ex) {
-			Log.e("open failed", ex.toString());
 		}
 	}
 
@@ -112,7 +110,6 @@ public class GifDecoder extends Thread {
 		try {
 			readStream();
 		} catch (Exception ex) {
-			Log.e("GifView decode run", ex.toString());
 			ex.printStackTrace();
 		}
 	}
@@ -292,7 +289,6 @@ public class GifDecoder extends Thread {
 		} catch (OutOfMemoryError | StackOverflowError e) {
 			e.printStackTrace();
 		} catch (Exception ex) {
-			Log.e("GifView decode setpixel", ex.toString());
 		}
 	}
 

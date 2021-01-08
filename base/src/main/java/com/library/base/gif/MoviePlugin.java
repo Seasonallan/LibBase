@@ -15,15 +15,26 @@ public class MoviePlugin extends GifPlugin {
 
     private Movie mMovie;
     private String file;
+
     @Override
     public boolean init(String file) {
         this.file = file;
+        FileInputStream fileInputStream = null;
         try {
-            byte[] bytes = getGiftBytes(new FileInputStream(file));
+            fileInputStream = new FileInputStream(file);
+            byte[] bytes = getGiftBytes(fileInputStream);
             mMovie = Movie.decodeByteArray(bytes, 0, bytes.length);
             return mMovie.duration() > 0;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            if (fileInputStream != null){
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
         return false;
     }
@@ -35,7 +46,7 @@ public class MoviePlugin extends GifPlugin {
 
     @Override
     public void onRelease() {
-        if (mMovie != null){
+        if (mMovie != null) {
             mMovie = null;
         }
     }
@@ -44,22 +55,22 @@ public class MoviePlugin extends GifPlugin {
     public void drawCanvasTime(Canvas canvas, int time) {
         if (mMovie != null) {
             mMovie.setTime(time);
-            mMovie.draw(canvas, 0,0,null);
+            mMovie.draw(canvas, 0, 0, null);
         }
     }
 
 
-
     private static final int DEFAULT_MOVIE_DURATION = 1000;
     private int duration = -1;
+
     @Override
     public int getDuration() {
-        if (duration <= 0){
-            if (mMovie == null){
+        if (duration <= 0) {
+            if (mMovie == null) {
                 duration = 0;
             }
             duration = mMovie.duration();
-            if(duration <= 0){
+            if (duration <= 0) {
                 duration = DEFAULT_MOVIE_DURATION;
             }
         }
@@ -68,7 +79,7 @@ public class MoviePlugin extends GifPlugin {
 
     @Override
     public int getDelay() {
-        if (delay < 0){
+        if (delay < 0) {
             try {
                 delay = DelayDecoder.getDelay(new FileInputStream(file));
             } catch (FileNotFoundException e) {

@@ -10,7 +10,6 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,7 +55,6 @@ public class FastPermissions {
         @Override
         public void onAttach(@NonNull Context context) {
             super.onAttach(context);
-            Log.d("PermissionFragment", "延迟执行");
             while (!runnables.isEmpty())
                 runnables.remove(0).run();
         }
@@ -114,11 +112,6 @@ public class FastPermissions {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(permissionFragment, PermissionFragment.class.getSimpleName());
         fragmentTransaction.commit();
-        if (permissionFragment.isAdded()) {
-            Log.d(TAG, "已经被添加到Activity");
-        } else {
-            Log.d(TAG, "尚未添加到Activity");
-        }
     }
 
     /**

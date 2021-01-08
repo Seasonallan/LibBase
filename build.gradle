@@ -22,3 +22,17 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+task runFireline(type:Exec) {
+    commandLine 'cmd' , '/c' , 'java ' +
+            '-jar ' + rootDir + '/tool/fireline.jar ' +
+            '-s=' + rootDir +
+            ' proj_name=pool ' +
+            '-r=' + rootDir + '/tool/report'
+
+    standardOutput = new ByteArrayOutputStream()
+    ext.output = {
+        return standardOutput.toString()
+    }
+    println standardOutput
+}
