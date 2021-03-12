@@ -184,7 +184,7 @@ public class BitmapUtil {
         // 其次把文件插入到系统图库
         try {
             MediaStore.Images.Media.insertImage(GlobalContext.app().getContentResolver(), file.getAbsolutePath(), fileName, null);
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } // 最后通知图库更新
 
