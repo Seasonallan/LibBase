@@ -143,7 +143,7 @@ public class BitmapUtil {
 
 
     /**
-     * 保存图片到相册
+     * 保存图片到相册12
      */
     public static String saveImageToGallery(Bitmap bitmap, String name) {
         if (bitmap == null || bitmap.isRecycled()) {
