@@ -185,7 +185,7 @@ public class BitmapUtil {
         try {
             MediaStore.Images.Media.insertImage(GlobalContext.app().getContentResolver(), file.getAbsolutePath(), fileName, null);
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         } // 最后通知图库更新
 
         GlobalContext.app().sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.parse("file://" + "")));
