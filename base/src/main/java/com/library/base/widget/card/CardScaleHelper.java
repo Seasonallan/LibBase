@@ -131,17 +131,26 @@ public class CardScaleHelper {
         }
 
         if (leftView != null) {
-            // y = (1 - mScale)x + mScale
-            leftView.setScaleY((1 - mScale) * percent + mScale);
+            setScaleY(leftView, (1 - mScale) * percent + mScale);
         }
         if (currentView != null) {
             // y = (mScale - 1)x + 1
-            currentView.setScaleY((mScale - 1) * percent + 1);
+            setScaleY(currentView, (mScale - 1) * percent + 1);
         }
         if (rightView != null) {
             // y = (1 - mScale)x + mScale
-            rightView.setScaleY((1 - mScale) * percent + mScale);
+            setScaleY(rightView, (1 - mScale) * percent + mScale);
         }
+    }
+
+    private void setScaleY(View view, float scale){
+        if (scale < -Float.MAX_VALUE || scale == Float.NEGATIVE_INFINITY){
+            return;
+        }
+        if (scale > Float.MAX_VALUE || scale == Float.POSITIVE_INFINITY){
+            return;
+        }
+        view.setScaleY(scale);
     }
 
     public void setScale(float scale) {
