@@ -11,7 +11,9 @@
         style="?android:attr/progressBarStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:indeterminate="true"/>
+        android:indeterminate="true"
+        android:indeterminateTint="#EBEBEB"
+        android:indeterminateTintMode="src_atop" />
 
     <TextView
         android:id="@+id/pull_to_refresh_footer_text"
@@ -21,6 +23,6 @@
         android:text="@string/footer_loading"
         android:textColor="#EBEBEB"
         android:textSize="9sp"
-        tools:ignore="HardcodedText"/>
+        tools:ignore="HardcodedText" />
 
 </LinearLayout>
