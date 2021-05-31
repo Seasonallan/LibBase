@@ -53,7 +53,7 @@ public class GifFrameView extends View {
         mMatrix.postScale(scale, scale);
 
         gifDecoder = new GifDecoderOneByOne();
-        //gifDecoder.setGifImage(R.raw.arena_light_raw);
+        gifDecoder.setGifImage(resourceId);
         gifDecoder.start();
         requestLayout();
 
